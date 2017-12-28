@@ -20,4 +20,8 @@ class Order < ApplicationRecord
   def total_order
     line_items.to_a.sum { |item| item.quantity }
   end
+
+  def total_price
+    line_items.to_a.sum {|item| item.total_price}
+  end
 end
