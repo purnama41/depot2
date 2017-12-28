@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :orders
   resources :contacts
   get 'admin' => 'admin#index'
 
@@ -9,7 +10,6 @@ Rails.application.routes.draw do
   end
 
   resources :users
-  resources :orders
   resources :line_items
   resources :carts
   #get 'store/index'
