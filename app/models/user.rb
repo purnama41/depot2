@@ -1,5 +1,12 @@
 class User < ApplicationRecord
+  enum status: {
+    "Administrator" => 1,
+    "Staff" => 2,
+    "User" => 3
+  }
+
   validates :name, presence: true, uniqueness: true
+  validates :status, inclusion: statuses.keys
   has_secure_password
 
   after_destroy :ensure_an_admin_remains

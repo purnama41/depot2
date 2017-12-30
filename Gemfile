@@ -61,4 +61,5 @@ gem 'foreman'
 gem 'webpacker', github: "rails/webpacker"
 #for pagination 
 gem 'kaminari'
-#gem 'devise'
+#for authorize user, sign in and sign up user
+gem 'devise'

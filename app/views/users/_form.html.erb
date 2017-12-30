@@ -31,6 +31,12 @@
     <%= form.password_field :password_confirmation, id: :user_password_confirmation, size:40 %>
   </div>
 
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.select :status,User.statuses.keys, id: :status,
+                    prompt: 'Select status' %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
