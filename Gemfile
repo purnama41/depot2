@@ -63,3 +63,5 @@ gem 'webpacker', github: "rails/webpacker"
 gem 'kaminari'
 #for authorize user, sign in and sign up user
 gem 'devise'
+
+gem 'ransack', github: 'activerecord-hackery/ransack'
